@@ -1,5 +1,5 @@
-numpy
-pandas
-facenet-pytorch
-fastapi
-uvicorn
+numpy~=1.26.4
+pandas~=2.2.3
+facenet-pytorch~=2.6.0
+fastapi~=0.115.12
+uvicorn~=0.34.2
