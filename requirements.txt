@@ -3,4 +3,3 @@ pandas
 facenet-pytorch
 fastapi
 uvicorn
-python-multipart
