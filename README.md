@@ -64,7 +64,7 @@ Once the API is running (either locally or on your deployed AWS EC2 server), you
 ### Endpoint URL
 Local: http://0.0.0.0:80/predict
 
-Deployed API: http://52.60.71.197:80/predict
+Deployed API: http://3.99.138.201:80/predict
 
 #### Request Format
 - Method: POST
@@ -77,7 +77,7 @@ Deployed API: http://52.60.71.197:80/predict
 ```python
 import requests
 
-url = "http://0.0.0.0:80/predict"  # Replace with EC2 URL if deployed
+url = "http://3.99.138.201:80/predict"  
 image_path = "path_to_image/selfie.jpg"
 
 with open(image_path, "rb") as image_file:
