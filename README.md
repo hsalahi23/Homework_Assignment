@@ -57,6 +57,40 @@ Receive estimated net worth and similar individuals
   ]
 }
 
+
+## How to Use the /predict Endpoint
+Once the API is running (either locally or on your deployed AWS EC2 server), you can make predictions by sending a selfie image via a POST request to the /predict endpoint.
+
+### Endpoint URL
+Local: http://0.0.0.0:80/predict
+
+Deployed API: http://52.60.71.197:80/predict
+
+#### Request Format
+- Method: POST
+
+- Content-Type: multipart/form-data
+
+- Field: "file" – your image file (selfie)
+
+### Sample Usage in Python
+```python
+import requests
+
+url = "http://0.0.0.0:80/predict"  # Replace with EC2 URL if deployed
+image_path = "path_to_image/selfie.jpg"
+
+with open(image_path, "rb") as image_file:
+    files = {"file": (image_path, image_file, "image/jpeg")}
+    response = requests.post(url, files=files)
+
+print(response)
+if response.status_code == 200:
+    print("Response JSON:", response.json())
+else:
+    print("Error:", response.status_code, response.text)
+```
+
 ## Overview
 
 ### How it works:
