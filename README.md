@@ -77,7 +77,7 @@ Deployed API: http://3.99.138.201:80/predict
 ```python
 import requests
 
-url = "http://3.99.138.201:80/predict"  
+url = "http://3.97.52.7:80/predict"  
 image_path = "path_to_image/selfie.jpg"
 
 with open(image_path, "rb") as image_file:
