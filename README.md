@@ -39,7 +39,7 @@ pip install -r requirements.txt
 python main.py
 ```
 2. Open the Swagger UI
-Go to http://localhost:8000/docs
+Go to http://localhost:80/docs
 
 3. Use the /predict endpoint
 Upload a selfie image (.jpg, .png)
